@@ -1,0 +1,68 @@
+@import "../../scss/abstract/variables";
+
+.tooltip {
+	position: relative;
+
+	&:hover {
+		&::before,
+		&::after {
+			visibility: visible;
+		}
+	}
+
+	&::before {
+		content: "stefan022github@gmail.com";
+		position: absolute;
+		z-index: 1;
+		top: 50%;
+		left: 145%;
+		width: auto;
+		padding: 0 1.25rem 0 0.75rem;
+		height: 40px;
+		border-radius: 10px;
+		transform: translateY(-50%);
+		background: $gray;
+		color: $dark;
+		display: flex;
+		align-items: center;
+		visibility: hidden;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		left: 125%;
+		top: 50%;
+		transform: translateY(-50%) rotate(45deg);
+		width: 25px;
+		height: 25px;
+		background: $gray;
+		visibility: hidden;
+	}
+}
+
+@media (max-width: 680px) {
+	.tooltip {
+		&::before {
+			top: -80%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		&::after {
+			top: -45%;
+			left: 50%;
+			transform: translateX(-50%) rotate(45deg);
+		}
+	}
+}
+
+@media (max-width: 375px) {
+	.tooltip {
+		&::before {
+			top: -80%;
+			left: -50%;
+			transform: translateX(-50%);
+		}
+	}
+}
