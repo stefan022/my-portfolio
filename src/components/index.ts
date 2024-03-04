@@ -27,3 +27,6 @@ export { default as Projects } from "./Projects/Projects";
 export { default as ProjectTitle } from "./Projects/ProjectTitle/ProjectTitle";
 export { default as FirstProject } from "./Projects/FirstProject/FirstProject";
 export { default as SecondProject } from "./Projects/SecondProject/SecondProject";
+
+// QuoteCode
+export { default as QuoteCode } from "./QuoteCode/QuoteCode";

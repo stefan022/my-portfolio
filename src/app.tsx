@@ -8,6 +8,7 @@ import {
 	Navbar,
 	Overlay,
 	Projects,
+	QuoteCode,
 	TechStack,
 } from "./components";
 
@@ -32,6 +33,7 @@ const App: FunctionComponent = (): JSX.Element => {
 					<AboutMe />
 					<TechStack />
 					<Projects />
+					<QuoteCode />
 				</Fragment>
 			</Container>
 		</MenuContext.Provider>
