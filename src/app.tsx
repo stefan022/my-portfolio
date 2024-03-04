@@ -1,10 +1,11 @@
 import { FunctionComponent, JSX } from "preact";
 import { useState, useEffect } from "preact/hooks";
 
+import { Background, Hero, Navbar, Overlay } from "./components";
 import { aos } from "./utils/aos";
-import MenuContext from "./context/MenuContext";
 
-import { Background, Navbar, Overlay } from "./components";
+import MenuContext from "./context/MenuContext";
+import Container from "./container/Container";
 
 const App: FunctionComponent = (): JSX.Element => {
 	const [isActive, setIsActive] = useState<boolean>(false);
@@ -16,6 +17,9 @@ const App: FunctionComponent = (): JSX.Element => {
 			<Navbar />
 			<Background />
 			<Overlay />
+			<Container>
+				<Hero />
+			</Container>
 		</MenuContext.Provider>
 	);
 };
