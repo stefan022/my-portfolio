@@ -7,6 +7,7 @@ import {
 	Hero,
 	Navbar,
 	Overlay,
+	Projects,
 	TechStack,
 } from "./components";
 
@@ -30,6 +31,7 @@ const App: FunctionComponent = (): JSX.Element => {
 					<Hero />
 					<AboutMe />
 					<TechStack />
+					<Projects />
 				</Fragment>
 			</Container>
 		</MenuContext.Provider>
