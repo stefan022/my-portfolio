@@ -4,6 +4,7 @@ import { useState, useEffect } from "preact/hooks";
 import {
 	AboutMe,
 	Background,
+	Contact,
 	Hero,
 	Navbar,
 	Overlay,
@@ -34,6 +35,7 @@ const App: FunctionComponent = (): JSX.Element => {
 					<TechStack />
 					<Projects />
 					<QuoteCode />
+					<Contact />
 				</Fragment>
 			</Container>
 		</MenuContext.Provider>

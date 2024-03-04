@@ -30,3 +30,7 @@ export { default as SecondProject } from "./Projects/SecondProject/SecondProject
 
 // QuoteCode
 export { default as QuoteCode } from "./QuoteCode/QuoteCode";
+
+// Contact
+export { default as Contact } from "./Contact/Contact";
+export { default as ContactLinks } from "./Contact/ContactLinks/ContactLinks";
