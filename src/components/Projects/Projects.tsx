@@ -1,6 +1,6 @@
 import { FunctionComponent, JSX } from "preact";
 
-import { FirstProject, Title } from "../../components";
+import { FirstProject, SecondProject, Title } from "../../components";
 
 const Projects: FunctionComponent = (): JSX.Element => {
 	return (
@@ -8,7 +8,7 @@ const Projects: FunctionComponent = (): JSX.Element => {
 			<Title title="Projects" />
 			<div className="flex gap-16 justify-center max-md:flex-col max-md:justify-start max-md:items-center">
 				<FirstProject />
-				<div>Second project</div>
+				<SecondProject />
 			</div>
 		</section>
 	);
