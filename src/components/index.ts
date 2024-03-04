@@ -18,3 +18,6 @@ export { default as ContactMe } from "./Hero/ContactMe/ContactMe";
 
 // About Me
 export { default as AboutMe } from "./AboutMe/AboutMe";
+
+// Tech Stack
+export { default as TechStack } from "./TechStack/TechStack";
