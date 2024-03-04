@@ -1,12 +1,19 @@
 import { FunctionComponent, JSX } from "preact";
-import { useEffect } from "preact/hooks";
+import { useState, useEffect } from "preact/hooks";
 
 import { aos } from "./utils/aos";
+import MenuContext from "./context/MenuContext";
 
 const App: FunctionComponent = (): JSX.Element => {
+	const [isActive, setIsActive] = useState<boolean>(false);
+
 	useEffect(aos, []);
 
-	return <div>App</div>;
+	return (
+		<MenuContext.Provider value={{ isActive, setIsActive }}>
+			<div>App</div>
+		</MenuContext.Provider>
+	);
 };
 
 export default App;
