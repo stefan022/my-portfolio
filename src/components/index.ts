@@ -34,3 +34,6 @@ export { default as QuoteCode } from "./QuoteCode/QuoteCode";
 // Contact
 export { default as Contact } from "./Contact/Contact";
 export { default as ContactLinks } from "./Contact/ContactLinks/ContactLinks";
+
+// Footer
+export { default as Footer } from "./Footer/Footer";
