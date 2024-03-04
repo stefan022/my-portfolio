@@ -1,6 +1,6 @@
 import { FunctionComponent, JSX } from "preact";
 
-import { Avatar, Desc, Info } from "..";
+import { Avatar, ContactMe, Desc, Info } from "..";
 
 const Hero: FunctionComponent = (): JSX.Element => {
 	return (
@@ -8,7 +8,7 @@ const Hero: FunctionComponent = (): JSX.Element => {
 			<Avatar />
 			<Info />
 			<Desc />
-			<div>ContactMe</div>
+			<ContactMe />
 		</section>
 	);
 };
