@@ -8,3 +8,4 @@ export { default as MenuContent } from "./Navbar/MenuContent/MenuContent";
 export { default as Hero } from "./Hero/Hero";
 export { default as Avatar } from "./Hero/Avatar/Avatar";
 export { default as Info } from "./Hero/Info/Info";
+export { default as Desc } from "./Hero/Desc/Desc";
