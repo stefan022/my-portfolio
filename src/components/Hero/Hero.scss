@@ -1,0 +1,11 @@
+@import "../../scss/abstract/variables";
+
+.avatar {
+	background: $dark;
+}
+
+@media (max-width: 365px) {
+	.full-name {
+		@apply text-5xl;
+	}
+}
