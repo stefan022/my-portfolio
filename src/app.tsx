@@ -11,6 +11,7 @@ import {
 	Overlay,
 	Projects,
 	QuoteCode,
+	ScrollToTop,
 	TechStack,
 } from "./components";
 
@@ -40,6 +41,7 @@ const App: FunctionComponent = (): JSX.Element => {
 				</Fragment>
 			</Container>
 			<Footer />
+			<ScrollToTop />
 		</MenuContext.Provider>
 	);
 };

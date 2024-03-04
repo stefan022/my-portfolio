@@ -1,5 +1,6 @@
 export { default as Title } from "./Title/Title";
 export { default as Background } from "./Background/Background";
+export { default as ScrollToTop } from "./ScrollToTop/ScrollToTop";
 
 // Navbar
 export { default as Navbar } from "./Navbar/Navbar";
