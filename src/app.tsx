@@ -1,7 +1,7 @@
-import { FunctionComponent, JSX } from "preact";
+import { Fragment, FunctionComponent, JSX } from "preact";
 import { useState, useEffect } from "preact/hooks";
 
-import { Background, Hero, Navbar, Overlay } from "./components";
+import { AboutMe, Background, Hero, Navbar, Overlay } from "./components";
 import { aos } from "./utils/aos";
 
 import MenuContext from "./context/MenuContext";
@@ -18,7 +18,10 @@ const App: FunctionComponent = (): JSX.Element => {
 			<Background />
 			<Overlay />
 			<Container>
-				<Hero />
+				<Fragment>
+					<Hero />
+					<AboutMe />
+				</Fragment>
 			</Container>
 		</MenuContext.Provider>
 	);
