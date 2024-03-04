@@ -1,14 +1,33 @@
 import { FunctionComponent, JSX } from "preact";
 
+import { github, linkedin } from "../../../constants/contact.constant";
+import { useEffect, useState } from "preact/hooks";
+
 import {
 	IconBrandGithub,
 	IconBrandLinkedin,
 	IconMail,
+	IconMailOpened,
 } from "@tabler/icons-preact";
 
-import { github, linkedin } from "../../../constants/contact.constant";
-
 const ContactLinks: FunctionComponent = (): JSX.Element => {
+	const [isActive, setIsActive] = useState<boolean>(false);
+
+	const handleClick = () => setIsActive((ia) => !ia);
+
+	useEffect(() => {
+		let timeout = setTimeout(() => {
+			setIsActive(false);
+		}, 10000);
+
+		window.addEventListener("resize", () => setIsActive(false));
+
+		return () => {
+			clearTimeout(timeout);
+			window.removeEventListener("resize", () => setIsActive(false));
+		};
+	}, [isActive === true]);
+
 	return (
 		<div className="flex gap-2" data-aos="fade-up">
 			<a
@@ -25,8 +44,15 @@ const ContactLinks: FunctionComponent = (): JSX.Element => {
 			>
 				<IconBrandLinkedin size={30} />
 			</a>
-			<a className="tooltip p-2">
-				<IconMail size={30} />
+			<a
+				className={`door p-2 cursor-pointer ${isActive && "active"}`}
+				onClick={handleClick}
+			>
+				{isActive ? (
+					<IconMailOpened size={30} />
+				) : (
+					<IconMail size={30} />
+				)}
 			</a>
 		</div>
 	);
