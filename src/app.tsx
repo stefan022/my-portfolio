@@ -3,6 +3,7 @@ import { useState, useEffect } from "preact/hooks";
 
 import { aos } from "./utils/aos";
 import MenuContext from "./context/MenuContext";
+
 import { Navbar } from "./components";
 
 const App: FunctionComponent = (): JSX.Element => {
