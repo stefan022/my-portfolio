@@ -5,6 +5,7 @@ import {
 	AboutMe,
 	Background,
 	Contact,
+	Footer,
 	Hero,
 	Navbar,
 	Overlay,
@@ -38,6 +39,7 @@ const App: FunctionComponent = (): JSX.Element => {
 					<Contact />
 				</Fragment>
 			</Container>
+			<Footer />
 		</MenuContext.Provider>
 	);
 };
