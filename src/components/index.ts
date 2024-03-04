@@ -21,3 +21,9 @@ export { default as AboutMe } from "./AboutMe/AboutMe";
 
 // Tech Stack
 export { default as TechStack } from "./TechStack/TechStack";
+
+// Projects
+export { default as Projects } from "./Projects/Projects";
+export { default as ProjectTitle } from "./Projects/ProjectTitle/ProjectTitle";
+export { default as FirstProject } from "./Projects/FirstProject/FirstProject";
+export { default as SecondProject } from "./Projects/SecondProject/SecondProject";

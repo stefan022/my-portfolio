@@ -46,3 +46,12 @@ li {
 		@apply border border-black transition-all text-black;
 	}
 }
+
+.link {
+	@apply cursor-pointer;
+
+	&:hover {
+		background: $wb-gradient;
+		@apply bg-clip-text text-transparent transition-all;
+	}
+}
