@@ -40,18 +40,100 @@ li {
 	@apply mb-4 list-disc;
 }
 
-.btn {
+.link {
 	&:hover {
 		background: $wb-gradient;
-		@apply border border-black transition-all text-black;
+		transition: 0.3s;
+		@apply text-transparent bg-clip-text;
 	}
 }
 
-.link {
-	@apply cursor-pointer;
+#btn-gradient {
+	padding: 0.75rem 2.5rem;
+}
 
-	&:hover {
-		background: $wb-gradient;
-		@apply bg-clip-text text-transparent transition-all;
-	}
+.btn-gradient {
+	position: relative;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 50px;
+	border: 1px solid white;
+	color: white;
+	background: transparent;
+	overflow: hidden;
+	transition: all 0.35s;
+	padding: 0.5rem 1.5rem;
+}
+
+.btn-gradient:before,
+.btn-gradient:after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	top: -100%;
+	left: 0;
+	background: $wb-gradient;
+	z-index: -1;
+	transition: all 0.35s;
+}
+
+.btn-gradient:before {
+	opacity: 0.5;
+}
+
+.btn-gradient:after {
+	transition-delay: 0.2s;
+}
+
+.btn-gradient:hover {
+	color: black;
+	border: 1px solid black;
+}
+
+.btn-gradient:hover:before,
+.btn-gradient:hover:after {
+	top: 0;
+}
+
+.btn-white {
+	display: inline-block;
+	text-align: center;
+	background: $light;
+	color: $dark;
+	border-radius: 25px;
+	position: relative;
+	min-width: 8.23em;
+	text-decoration: none;
+	padding: 0.5rem 1.25rem;
+}
+
+.btn-white:before,
+.btn-white:after {
+	width: 3rem;
+	height: 2.5rem;
+	position: absolute;
+	content: "";
+	display: inline-block;
+	background: $light;
+	border-radius: 50%;
+	transition: transform 0.75s ease;
+	transform: scale(0);
+	z-index: -1;
+}
+
+.btn-white:before {
+	top: -25%;
+	left: 15%;
+}
+
+.btn-white:after {
+	bottom: -25%;
+	right: 15%;
+}
+
+.btn-white:hover:before,
+.btn-white:hover:after {
+	transform: none;
 }

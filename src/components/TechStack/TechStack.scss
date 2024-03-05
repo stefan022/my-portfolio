@@ -1,0 +1,35 @@
+.skills {
+	&:hover {
+		animation: normal skill-animation 2s ease-in-out;
+	}
+}
+
+@keyframes skill-animation {
+	0% {
+		transform: rotateY(0deg);
+	}
+
+	25% {
+		transform: rotateY(20deg);
+	}
+
+	50% {
+		transform: rotateY(7.5deg);
+	}
+
+	70% {
+		transform: rotateY(30deg);
+	}
+
+	80% {
+		transform: rotateY(7.5deg);
+	}
+
+	90% {
+		transform: rotateY(15deg);
+	}
+
+	100% {
+		transform: rotateY(0deg);
+	}
+}

@@ -6,13 +6,15 @@ const Hero: FunctionComponent = (): JSX.Element => {
 	const handleSendEmail = () => (window.location.href = sendEmail);
 
 	return (
-		<button
-			className="bg-black py-3 px-10 rounded-full border border-gray-400 btn"
-			data-aos="fade-up"
-			onClick={handleSendEmail}
-		>
-			Contact me
-		</button>
+		<div data-aos="fade-up">
+			<button
+				id="btn-gradient"
+				className="bg-black py-3 px-10 rounded-full border border-gray-400 btn-gradient"
+				onClick={handleSendEmail}
+			>
+				Contact Me
+			</button>
+		</div>
 	);
 };
 

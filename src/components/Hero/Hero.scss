@@ -2,6 +2,15 @@
 
 .avatar {
 	background: $dark;
+
+	&-img {
+		transition: 0.5s;
+
+		&:hover {
+			transition: 0.5s;
+			@apply pl-10 pt-10;
+		}
+	}
 }
 
 @media (max-width: 365px) {

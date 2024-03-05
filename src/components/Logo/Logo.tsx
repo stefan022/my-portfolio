@@ -6,13 +6,15 @@ import MenuContext from "../../context/MenuContext";
 
 import logo from "../../assets/logo.webp";
 
+import "./Logo.scss";
+
 const Logo: FunctionComponent = (): JSX.Element => {
 	const { isActive } = useContext(MenuContext as Context<IMenuContext>);
 
 	return (
 		<div
 			data-aos="fade-right"
-			className={`relative ${
+			className={`relative shake ${
 				isActive &&
 				"relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black before:bg-opacity-70"
 			}`}

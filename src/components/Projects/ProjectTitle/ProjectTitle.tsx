@@ -11,7 +11,7 @@ const ProjectTitle: FunctionComponent<IProps> = ({
 }): JSX.Element => {
 	return (
 		<h4 className="mb-6 link w-fit" data-aos="fade-up">
-			<a href={link} target="_blank" className="text-3xl transition-">
+			<a href={link} target="_blank" className="text-3xl link">
 				{title}
 			</a>
 		</h4>

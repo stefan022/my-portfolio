@@ -1,0 +1,49 @@
+@import "../../scss/abstract/variables";
+
+.scroll-btn {
+	position: fixed;
+	right: 2.5rem;
+	bottom: 2.5rem;
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	background: $dark;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: $light;
+	font-weight: bold;
+	cursor: pointer;
+	transition: 0.3s;
+	opacity: 0;
+	border: 2px solid $blue;
+	z-index: 100;
+
+	&.active {
+		opacity: 1;
+		animation: jump 3s infinite;
+	}
+}
+
+@keyframes jump {
+	0%,
+	10%,
+	20%,
+	30%,
+	40%,
+	100% {
+		transform: translateY(0) scaleX(1) scaleY(1);
+	}
+
+	15% {
+		transform: translateY(5px) scaleY(0.9);
+	}
+
+	25% {
+		transform: translateY(-25px) scaleX(0.9) scaleY(1.1);
+	}
+
+	35% {
+		transform: translateY(5px) scaleY(0.9);
+	}
+}
