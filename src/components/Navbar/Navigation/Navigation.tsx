@@ -1,15 +1,17 @@
 import { FunctionComponent, JSX } from "preact";
 
+import "./Navigation.scss";
+
 const Navigation: FunctionComponent = (): JSX.Element => {
 	return (
-		<nav className="inline-block max-md:hidden" data-aos="fade-left">
-			<ul className="flex items-center gap-4">
-				<li className="list-none">
+		<nav className="nav" data-aos="fade-left">
+			<ul className="nav__group">
+				<li className="nav__group-list">
 					<a href="#about" className="btn-gradient">
 						About Me
 					</a>
 				</li>
-				<li className="list-none">
+				<li className="nav__group-list">
 					<a href="#contact" className="btn-white">
 						Contact
 					</a>
