@@ -1,8 +1,14 @@
 @import "../../scss/abstract/variables";
 
+.contact {
+	&__info {
+		@apply flex items-center justify-center flex-col relative z-10 gap-5 mb-8;
+	}
+}
+
 .door {
 	position: relative;
-	@apply border-2 border-black;
+	@apply border-2 border-black p-2 cursor-pointer;
 
 	&::before,
 	&::after {

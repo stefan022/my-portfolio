@@ -28,6 +28,12 @@
 	}
 }
 
+.contact {
+	&__links {
+		@apply flex gap-2;
+	}
+}
+
 .github {
 	@include icon($dark-gray);
 }

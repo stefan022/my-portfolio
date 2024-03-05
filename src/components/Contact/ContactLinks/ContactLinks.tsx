@@ -31,17 +31,14 @@ const ContactLinks: FunctionComponent = (): JSX.Element => {
 	}, [isActive === true]);
 
 	return (
-		<div className="flex gap-2" data-aos="fade-up">
+		<div className="contact__links" data-aos="fade-up">
 			<a href={github} target="_blank" className="github">
 				<IconBrandGithub size={30} />
 			</a>
 			<a href={linkedin} target="_blank" className="linkedin">
 				<IconBrandLinkedin size={30} />
 			</a>
-			<a
-				className={`door p-2 cursor-pointer ${isActive && "active"}`}
-				onClick={handleClick}
-			>
+			<a className={`door ${isActive && "active"}`} onClick={handleClick}>
 				{isActive ? (
 					<IconMailOpened size={30} />
 				) : (
