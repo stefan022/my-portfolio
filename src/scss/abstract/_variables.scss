@@ -1,8 +1,14 @@
-$dark: #080808;
+// light
 $light: #f8f8f8;
 $gray: #c0c0c0;
 $blue: #0081ff;
 
+// dark
+$dark: #080808;
+$dark-gray: #4b5563;
+$dark-blue: #1e40af;
+
+// gradient
 $wb-gradient: linear-gradient(
 	90deg,
 	rgba(255, 255, 255, 1) 0%,

@@ -2,6 +2,7 @@
 
 .door {
 	position: relative;
+	@apply border-2 border-black;
 
 	&::before,
 	&::after {

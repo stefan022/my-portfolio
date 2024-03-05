@@ -10,6 +10,8 @@ import {
 	IconMailOpened,
 } from "@tabler/icons-preact";
 
+import "./ContactLinks.scss";
+
 const ContactLinks: FunctionComponent = (): JSX.Element => {
 	const [isActive, setIsActive] = useState<boolean>(false);
 
@@ -30,18 +32,10 @@ const ContactLinks: FunctionComponent = (): JSX.Element => {
 
 	return (
 		<div className="flex gap-2" data-aos="fade-up">
-			<a
-				href={github}
-				target="_blank"
-				className="rounded-full p-2 hover:bg-gray-800 transition-all"
-			>
+			<a href={github} target="_blank" className="github">
 				<IconBrandGithub size={30} />
 			</a>
-			<a
-				href={linkedin}
-				target="_blank"
-				className="rounded-full p-2 hover:bg-blue-900 transition-all"
-			>
+			<a href={linkedin} target="_blank" className="linkedin">
 				<IconBrandLinkedin size={30} />
 			</a>
 			<a
