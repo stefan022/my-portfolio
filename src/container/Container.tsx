@@ -7,7 +7,7 @@ interface IProps {
 }
 
 const Container: FunctionComponent<IProps> = ({ children }): JSX.Element => {
-	return <div className="container">{children}</div>;
+	return <div className="cnt">{children}</div>;
 };
 
 export default Container;
