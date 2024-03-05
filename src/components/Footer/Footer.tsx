@@ -1,9 +1,11 @@
 import { FunctionComponent, JSX } from "preact";
 
+import "./Footer.scss";
+
 const Footer: FunctionComponent = (): JSX.Element => {
 	return (
-		<section className="flex items-center justify-center relative z-10 pt-6 pb-8">
-			<p className="text-gray-300">
+		<section className="footer">
+			<p className="footer__content">
 				&copy; 2024 Sb! All rights reserved.
 			</p>
 		</section>

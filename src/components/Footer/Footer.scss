@@ -1,0 +1,7 @@
+.footer {
+	@apply flex items-center justify-center relative z-10 pt-6 pb-8;
+
+	&__content {
+		@apply text-gray-300;
+	}
+}
