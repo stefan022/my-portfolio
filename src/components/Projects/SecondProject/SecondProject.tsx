@@ -5,13 +5,13 @@ import { secondProjectInfo } from "../../../constants/projectInfo.constant";
 
 const SecondProject: FunctionComponent = (): JSX.Element => {
 	return (
-		<div className="w-1/2 max-md:w-full">
+		<div className="projects__group-project">
 			<ProjectTitle
 				title="ElectroneX"
 				link="https://react-ts-psi.vercel.app/"
 			/>
 
-			<ul className="text-gray-300">
+			<ul className="projects__group-project__desc">
 				{secondProjectInfo.map((info) => {
 					const { id, text } = info;
 

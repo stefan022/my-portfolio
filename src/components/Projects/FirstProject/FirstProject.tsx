@@ -5,13 +5,13 @@ import { firstProjectInfo } from "../../../constants/projectInfo.constant";
 
 const FIrstProject: FunctionComponent = (): JSX.Element => {
 	return (
-		<div className="w-1/2 max-md:w-full">
+		<div className="projects__group-project">
 			<ProjectTitle
 				title="eCoinWall"
 				link="http://309n123.e2.mars-hosting.com/"
 			/>
 
-			<ul className="text-gray-300">
+			<ul className="projects__group-project__desc">
 				{firstProjectInfo.map((info) => {
 					const { id, text } = info;
 

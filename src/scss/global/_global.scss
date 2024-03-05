@@ -44,7 +44,7 @@ li {
 	&:hover {
 		background: $wb-gradient;
 		transition: 0.3s;
-		@apply text-transparent bg-clip-text;
+		@apply text-transparent bg-clip-text text-3xl;
 	}
 }
 

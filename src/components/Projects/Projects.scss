@@ -1,0 +1,15 @@
+.projects {
+	@apply flex items-center justify-center flex-col relative z-10 gap-5 mb-32;
+
+	&__group {
+		@apply flex gap-16 justify-center max-md:flex-col max-md:justify-start max-md:items-center;
+
+		&-project {
+			@apply w-1/2 max-md:w-full;
+
+			&__desc {
+				@apply text-gray-300;
+			}
+		}
+	}
+}

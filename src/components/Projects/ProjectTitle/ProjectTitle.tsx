@@ -1,5 +1,7 @@
 import { FunctionComponent, JSX } from "preact";
 
+import "./ProjectTitle.scss";
+
 interface IProps {
 	title: string;
 	link: string;
@@ -10,8 +12,12 @@ const ProjectTitle: FunctionComponent<IProps> = ({
 	link,
 }): JSX.Element => {
 	return (
-		<h4 className="mb-6 link w-fit" data-aos="fade-up">
-			<a href={link} target="_blank" className="text-3xl link">
+		<h4 className="project__title link" data-aos="fade-up">
+			<a
+				href={link}
+				target="_blank"
+				className="project__title-content link"
+			>
 				{title}
 			</a>
 		</h4>

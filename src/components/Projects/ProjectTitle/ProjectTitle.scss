@@ -1,0 +1,9 @@
+.project {
+	&__title {
+		@apply mb-6 w-fit;
+
+		&-content {
+			@apply text-3xl;
+		}
+	}
+}
