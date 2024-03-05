@@ -30,3 +30,8 @@ body {
 	border: 1px solid $gray;
 	@apply rounded-full;
 }
+
+::selection {
+	background-color: $dark-gray;
+	color: $light;
+}
