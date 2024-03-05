@@ -1,0 +1,11 @@
+.title {
+	@apply text-center;
+
+	&__content {
+		@apply mb-2;
+	}
+
+	&__subtitle {
+		@apply uppercase mb-6;
+	}
+}
