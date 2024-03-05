@@ -28,7 +28,7 @@ Use Preact to build parts of an app without complex integration. Embed Preact in
 Lightweight is a lot more fun when you don't have to sacrifice productivity to get there. Preact gets you productive right away. It even has a few bonus features:
 
 props, state and context are passed to render()
-Use standard HTML attributes like class and for
+Use standard HTML attributes like className and for
 
 ### Ecosystem Compatible
 Virtual DOM Components make it easy to share reusable things - everything from buttons to data providers. Preact's design means you can seamlessly use thousands of Components available in the React ecosystem.

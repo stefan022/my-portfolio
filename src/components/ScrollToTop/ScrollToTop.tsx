@@ -21,7 +21,7 @@ const ScrollToTop: FunctionComponent = (): JSX.Element => {
 
 	return (
 		<div
-			class={isActive ? "scroll-btn active" : "scroll-btn"}
+			className={isActive ? "scroll-btn active" : "scroll-btn"}
 			onClick={handleScroll}
 		>
 			<IconChevronUp />
