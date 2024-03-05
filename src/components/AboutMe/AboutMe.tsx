@@ -3,18 +3,17 @@ import { FunctionComponent, JSX } from "preact";
 import { Title } from "..";
 import { aboutMe } from "../../constants/aboutMe.constant";
 
+import "./AboutMe.scss";
+
 const AboutMe: FunctionComponent = (): JSX.Element => {
 	return (
-		<section
-			id="about"
-			className="flex items-center justify-center flex-col relative z-10 gap-5 mb-32 pt-4"
-		>
+		<section id="about" className="about__me">
 			<Title title="About Me" />
 
 			{aboutMe.map((value, index) => {
 				return (
 					<p
-						className="text-center text-gray-300"
+						className="about__me-text"
 						data-aos="fade-up"
 						key={index}
 					>

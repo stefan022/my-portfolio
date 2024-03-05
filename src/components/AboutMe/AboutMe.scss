@@ -1,0 +1,9 @@
+.about {
+	&__me {
+		@apply flex items-center justify-center flex-col relative z-10 gap-5 mb-32 pt-4;
+
+		&-text {
+			@apply text-center text-gray-300;
+		}
+	}
+}
