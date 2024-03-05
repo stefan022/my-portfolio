@@ -1,4 +1,4 @@
-import { FunctionComponent, JSX, Fragment, Context } from "preact";
+import { FunctionComponent, JSX, Context } from "preact";
 import { useContext, useEffect, useState } from "preact/hooks";
 
 import { IMenuContext } from "../../../typescript/interfaces/IMenuContext";
