@@ -1,20 +1,3 @@
-@import "../../scss/abstract/variables";
-
-.avatar {
-	background: $dark;
-
-	&-img {
-		transition: 0.5s;
-
-		&:hover {
-			transition: 0.5s;
-			@apply pl-10 pt-10;
-		}
-	}
-}
-
-@media (max-width: 365px) {
-	.full-name {
-		@apply text-5xl;
-	}
+.hero {
+	@apply w-full min-h-[786px] flex flex-col items-center justify-center relative z-10 gap-5;
 }

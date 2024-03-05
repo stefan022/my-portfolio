@@ -1,0 +1,20 @@
+@import "../../../scss/abstract/variables";
+
+.avatar {
+	background: $dark;
+	@apply relative rounded-full border-2 border-white w-[200px] max-sm:w-[150px];
+
+	&__img {
+		transition: 0.5s;
+		@apply rounded-full relative z-10;
+
+		&:hover {
+			transition: 0.5s;
+			@apply pl-10 pt-10;
+		}
+	}
+
+	&__hi {
+		@apply absolute top-10 left-10 font-bold max-sm:top-8 max-sm:left-8;
+	}
+}

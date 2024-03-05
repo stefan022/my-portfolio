@@ -1,0 +1,23 @@
+.personal {
+	&__info {
+		@apply text-center mb-6 px-2;
+
+		&_full {
+			&-name {
+				@apply mb-2;
+			}
+		}
+	}
+}
+
+@media (max-width: 365px) {
+	.personal {
+		&__info {
+			&_full {
+				&-name {
+					@apply text-5xl;
+				}
+			}
+		}
+	}
+}

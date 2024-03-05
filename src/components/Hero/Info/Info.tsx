@@ -1,9 +1,11 @@
 import { FunctionComponent, JSX } from "preact";
 
+import "./Info.scss";
+
 const Info: FunctionComponent = (): JSX.Element => {
 	return (
-		<div className="text-center mb-6 px-2">
-			<h1 className="mb-2 full-name" data-aos="fade-right">
+		<div className="personal__info">
+			<h1 className="personal__info_full-name" data-aos="fade-right">
 				Stefan Blagojevic!
 			</h1>
 			<h4 data-aos="fade-left">
