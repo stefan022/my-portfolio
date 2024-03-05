@@ -1,9 +1,15 @@
 .bg {
-	width: 1920px;
+	@apply relative z-0;
+
+	&__img {
+		@apply absolute -top-24 right-0 w-[1920px];
+	}
 }
 
 @media (min-width: 1750px) {
 	.bg {
-		width: 1760px;
+		&__img {
+			@apply w-[1760px];
+		}
 	}
 }

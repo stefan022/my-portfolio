@@ -6,12 +6,8 @@ import "./Background.scss";
 
 const Background: FunctionComponent = (): JSX.Element => {
 	return (
-		<div className="relative z-0">
-			<img
-				className="absolute -top-24 right-0 bg"
-				src={background}
-				alt="background.webp"
-			/>
+		<div className="bg">
+			<img className="bg__img" src={background} alt="background.webp" />
 		</div>
 	);
 };
