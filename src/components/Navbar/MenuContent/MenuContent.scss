@@ -1,0 +1,13 @@
+.menu {
+	&__content {
+		@apply absolute z-50 right-0 top-24 bg-black p-4 flex flex-col items-center justify-center gap-6 w-[200px] h-[150px] rounded-3xl border border-gray-300;
+
+		&-title {
+			@apply pt-4;
+		}
+
+		&-list {
+			@apply mb-2;
+		}
+	}
+}

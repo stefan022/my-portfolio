@@ -6,6 +6,8 @@ import { IconBurger, IconCircleDashed } from "@tabler/icons-preact";
 
 import MenuContext from "../../../context/MenuContext";
 
+import "./MenuIcon.scss";
+
 const MenuIcon: FunctionComponent = (): JSX.Element => {
 	const { isActive, setIsActive } = useContext(
 		MenuContext as Context<IMenuContext>
@@ -36,7 +38,7 @@ const MenuIcon: FunctionComponent = (): JSX.Element => {
 		return (
 			<IconCircleDashed
 				size={30}
-				className="hidden cursor-pointer hover:text-gray-300 transition-all max-md:inline-block"
+				className="menu__icon"
 				onClick={handleOpenMenu}
 			/>
 		);
@@ -45,7 +47,7 @@ const MenuIcon: FunctionComponent = (): JSX.Element => {
 	return (
 		<IconBurger
 			size={30}
-			className="hidden cursor-pointer hover:text-gray-300 transition-all max-md:inline-block"
+			className="menu__icon"
 			data-aos={init && "fade-left"}
 			onClick={handleOpenMenu}
 		/>

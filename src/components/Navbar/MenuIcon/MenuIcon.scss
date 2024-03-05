@@ -1,0 +1,5 @@
+.menu {
+	&__icon {
+		@apply hidden cursor-pointer hover:text-gray-300 transition-all max-md:inline-block;
+	}
+}
