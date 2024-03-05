@@ -1,8 +1,14 @@
-.shake {
+.logo {
+	@apply relative;
+
 	&:hover {
 		animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 		transform: translate3d(0, 0, 0) rotate(0deg);
 		perspective: 1000px;
+	}
+
+	&__overlay {
+		@apply relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black before:bg-opacity-70;
 	}
 }
 

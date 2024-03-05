@@ -14,10 +14,7 @@ const Logo: FunctionComponent = (): JSX.Element => {
 	return (
 		<div
 			data-aos="fade-right"
-			className={`relative shake ${
-				isActive &&
-				"relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black before:bg-opacity-70"
-			}`}
+			className={`logo ${isActive && "logo__overlay"}`}
 		>
 			<img width={75} src={logo} alt="logo.webp" />
 		</div>
