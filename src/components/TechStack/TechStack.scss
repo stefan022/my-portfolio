@@ -1,10 +1,20 @@
-.skills {
-	&:hover {
-		animation: normal skill-animation 2s ease-in-out;
+.tech {
+	&__stack {
+		@apply flex items-center justify-center flex-col relative z-10 gap-5 mb-32;
+
+		&-skills {
+			@apply flex gap-5 flex-wrap items-center justify-center;
+
+			&-img {
+				&:hover {
+					animation: normal skills 2s ease-in-out;
+				}
+			}
+		}
 	}
 }
 
-@keyframes skill-animation {
+@keyframes skills {
 	0% {
 		transform: rotateY(0deg);
 	}

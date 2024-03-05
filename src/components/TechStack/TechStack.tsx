@@ -29,13 +29,10 @@ const TechStack: FunctionComponent = (): JSX.Element => {
 	}, []);
 
 	return (
-		<section className="flex items-center justify-center flex-col relative z-10 gap-5 mb-32">
+		<section className="tech__stack">
 			<Title title="Tech Stack" />
-			<div
-				className="flex gap-5 flex-wrap items-center justify-center"
-				data-aos="fade-up"
-			>
-				<div className="skills">
+			<div className="tech__stack-skills" data-aos="fade-up">
+				<div className="tech__stack-skills-img">
 					<img src={`${skillIcons}${perLine}`} alt="My Skills" />
 				</div>
 			</div>
