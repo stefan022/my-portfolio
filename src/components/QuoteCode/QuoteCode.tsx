@@ -6,18 +6,18 @@ import "./QuoteCode.scss";
 
 const QuoteCode: FunctionComponent = (): JSX.Element => {
 	return (
-		<section className="flex items-center justify-center flex-col relative z-10 gap-2.5 mb-32">
+		<section className="quote__code">
 			<Title title="Quote Code" />
-			<div className="flex flex-col relative code" data-aos="fade-up">
+			<div className="quote__code-content" data-aos="fade-up">
 				<code>
 					<span>do</span>
 					{` {`}
 				</code>
-				<code className="pl-6 text-gray-300">{`"your best"`}</code>
+				<code className="quote__code-content__str-one">{`"your best"`}</code>
 				<code>
 					{`}`} <span>while</span>
 					{" ("}
-					<span className="text-gray-300 bg-none">
+					<span className="quote__code-content__str-two">
 						"you still have the time"
 					</span>
 					{`);`}

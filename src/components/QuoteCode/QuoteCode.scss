@@ -1,19 +1,35 @@
-.code {
-	position: relative;
+.quote {
+	&__code {
+		@apply flex items-center justify-center flex-col relative z-10 gap-2.5 mb-32;
 
-	&::before {
-		content: "";
-		position: absolute;
-		bottom: 0;
-		right: -5px;
-		height: 25px;
-		width: 2px;
-		background: transparent;
-	}
+		&-content {
+			@apply flex flex-col relative;
 
-	&:hover {
-		&::before {
-			animation: blink 0.75s step-end infinite;
+			&__str {
+				&-one {
+					@apply pl-6 text-gray-300;
+				}
+
+				&-two {
+					@apply text-gray-300 bg-none;
+				}
+			}
+
+			&::before {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				right: -5px;
+				height: 25px;
+				width: 2px;
+				background: transparent;
+			}
+
+			&:hover {
+				&::before {
+					animation: blink 0.75s step-end infinite;
+				}
+			}
 		}
 	}
 }
